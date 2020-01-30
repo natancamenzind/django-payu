@@ -22,7 +22,7 @@ for dirpath, dirnames, filenames in os.walk(PROJECT_NAME):
 
 setup(
     name='django-payu',
-    version='0.5',
+    version='0.5.1',
     packages=['payu', 'payu.migrations'],
     include_package_data=True,
     description='A simple PayU app for Django.',
@@ -41,10 +41,11 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.6',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
     install_requires=[
-        'django>=1.7,<=2.0.8',
+        'django>=1.7,<=2.2.9',
     ],
 )
